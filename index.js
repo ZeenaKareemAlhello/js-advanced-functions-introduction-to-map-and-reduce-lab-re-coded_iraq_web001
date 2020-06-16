@@ -19,12 +19,17 @@ function mapToDouble(sourceArray){
 console.log(mapToDouble([1,5,3,2]))
 
 function mapToSquare(sourceArray){
+<<<<<<< HEAD
  let  d= sourceArray.map(x=>x*x)
+=======
+ let  d= sourceArray.map(x=>Math.sqrt(x))
+>>>>>>> 8bf6f598b98816711a0594f40ce34c00492790ee
  return d
 }
 console.log(mapToSquare([1,5,3,2]))
 
 function reduceToTotal(sourceArray, startingPoint){
+<<<<<<< HEAD
   
   if(typeof startingPoint !== "undefined"){
  let a= sourceArray.reduce(
@@ -72,6 +77,19 @@ function reduceToAnyTrue(sourceArray){
  else{
  return false
 }
+=======
+  sourceArray.reduce(
+  ( accumulator, currentValue ) => accumulator + currentValue,
+  startingPoint
+)
+}
+function reduceToAllTrue(sourceArray){
+  sourceArray.reduce(( accumulator, currentValue ) => { currentValue === true},false
+)
+}
+function reduceToAnyTrue(sourceArray){
+  sourceArray.reduce(( accumulator, currentValue ) =>
+>>>>>>> 8bf6f598b98816711a0594f40ce34c00492790ee
 }
 
 
@@ -84,3 +102,7 @@ function reduceToAnyTrue(sourceArray){
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8bf6f598b98816711a0594f40ce34c00492790ee
